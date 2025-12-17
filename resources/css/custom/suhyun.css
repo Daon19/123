@@ -1,0 +1,55 @@
+/* 기본 폼 요소 스타일 */
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: bold; }
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .dynamic-fields { padding: 15px; margin-top: 20px; border: 1px dashed #b2dfdb; border-radius: 4px; background-color: #f5fffd; }
+        .field-section { display: none; }
+
+        /* 인라인 폼 필드 스타일 (레이블과 입력/선택 상자를 한 줄에 배치) */
+        .inline-form-field {
+            display: flex; /* Flexbox를 사용하여 내부 요소를 가로 배열 */
+            align-items: center; /* 수직 중앙 정렬 */
+            gap: 15px; /* 레이블과 입력란 사이의 간격 */
+        }
+        .inline-form-field label {
+            /* 레이블 스타일 */
+            display: block !important;
+            margin-bottom: 0 !important; 
+            flex-shrink: 0; /* 레이블이 줄어들지 않도록 고정 */
+            width: 120px; /* 레이블의 너비를 고정하여 정렬 */
+        }
+        /* select와 input 요소에 flex-grow 적용하여 남은 공간 채우기 */
+        .inline-form-field select,
+        .inline-form-field input[type="text"],
+        .inline-form-field input[type="tel"] {
+            flex-grow: 1; /* 남은 공간을 최대한 채우도록 설정 */
+            width: auto !important; /* 기존 width: 100% 오버라이드 */
+        }
+        
+        /* [수정] 버튼 세로 정렬 및 가운데 정렬 스타일 */
+        .vertical-button-group {
+            border-radius: 4px; /* 버튼 모서리 둥글게 */
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid transparent; /* 기본 테두리 설정 */
+            display: flex;
+            flex-direction: column; /* 세로 정렬 */
+            align-items: center; /* 가운데 정렬 */
+            margin-top: 30px;
+            padding: 10px 20px;
+        }
+        .vertical-button-group button {
+            width: 150px; /* 버튼 너비 통일 (원하는 크기로 조정 가능) */
+            margin-bottom: 10px; /* 버튼 사이 간격 */
+            margin-left: 0 !important; /* 기존의 margin-left 제거 */
+        }
