@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/guide/favicon.ico">
+    <link rel="icon" type="image/png" sizes="200x200" href="resources/img/guide/favicon_200.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/custom/my.css">
+    <link rel="stylesheet" href="resources/css/custom/suhyun.css">
+    <title>수원특례시청</title>
+    <!-- <link href="resources/css/pattern.css" type="text/css" rel="stylesheet" /> -->
+    <style>
+        /* iframe 스타일링 */
+        #header-frame,
+        #footer-frame {
+            width: 100%;
+            border: none;
+            display: block;
+            overflow: hidden;
+        }
+
+        #header-frame {
+            height: 200px;
+            /* 헤더 높이에 맞게 조정 */
+        }
+
+        #footer-frame {
+            height: 400px;
+            /* 푸터 높이에 맞게 조정 */
+        }
+    </style>
+    <script>
+        // iframe 높이 자동 조절
+        function resizeIframe(iframe) {
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- 헤더 iframe -->
+        <iframe id="header-frame" src="header.html" onload="resizeIframe(this)" scrolling="no"></iframe>
+
+        <!-- 컨테이너 영역 -->
+        <div id="container" style="height: 500px;">
+            <div class="inner">
+                <div id="container">
+                    <div class="inner in-between">
+                        <nav class="left-menu">
+                            <div class="left-in">
+                                <h2 class="lnb-tit">1depth title</h2>
+                                <ul class="acco-list lnb-list" data-action="accordion">
+                                    <li class="li">
+                                        <div class="acco-head">
+                                            <h3 class="tit">2depth-title</h3>
+                                            <button type="button" class="btn btn-ico acco-btn" aria-expanded="false">
+                                                <span class="sr-only">접기</span>
+                                            </button>
+                                        </div>
+                                        <div class="acco-body">
+                                            <div class="acco-in">
+                                                <ul class="sub-ul">
+                                                    <li>
+                                                        <button type="button" class="subm is-depth4"
+                                                            aria-expanded="false">
+                                                            3depth title<span class="sr-only">열기</span>
+                                                        </button>
+                                                        <div class="depth4-wrap">
+                                                            <button type="button" class="depth4-tit">
+                                                                3depth-title
+                                                                <span class="sr-only">닫기</span>
+                                                            </button>
+                                                            <ul class="depth4-ul">
+                                                                <li><a href="#">depth title</a></li>
+                                                                <li><a href="#">depth title</a></li>
+                                                                <li><a href="#">depth title</a></li>
+                                                                <li><a href="#">depth title</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="#" class="subm" aria-current="page">3depth title</a>
+                                                    </li>
+                                                    <li><a href="#" class="subm">3depth title</a></li>
+                                                    <li><a href="#" class="subm">3depth title</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="li">
+                                        <div class="acco-head">
+                                            <h3 class="tit">2depth-title</h3>
+                                            <button type="button" class="btn btn-ico acco-btn" aria-expanded="false">
+                                                <span class="sr-only">접기</span>
+                                            </button>
+                                        </div>
+                                        <div class="acco-body">
+                                            <div class="acco-in">
+                                                <ul class="sub-ul">
+                                                    <li><a href="#" class="subm">3depth title</a></li>
+                                                    <li><a href="#" class="subm">3depth title</a></li>
+                                                    <li><a href="#" class="subm">3depth title</a></li>
+                                                    <li>
+                                                        <button type="button" class="subm is-depth4"
+                                                            aria-expanded="false">
+                                                            3depth title<span class="sr-only">열기</span>
+                                                        </button>
+                                                        <div class="depth4-wrap">
+                                                            <button type="button" class="depth4-tit">
+                                                                3depth title<span class="sr-only">닫기</span>
+                                                            </button>
+                                                            <ul class="depth4-ul">
+                                                                <li><a href="#">depth title</a></li>
+                                                                <li><a href="#">depth title</a></li>
+                                                                <li><a href="#">depth title</a></li>
+                                                                <li><a href="#">depth title</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="li">
+                                        <div class="acco-head">
+                                            <h3 class="tit">2depth-title</h3>
+                                            <button type="button" class="btn btn-ico acco-btn" aria-expanded="false">
+                                                <span class="sr-only">접기</span>
+                                            </button>
+                                        </div>
+                                        <div class="acco-body">
+                                            <div class="acco-in">
+                                                <ul class="sub-ul">
+                                                    <li><a href="#" class="subm">3depth title</a></li>
+                                                    <li><a href="#" class="subm">3depth title</a></li>
+                                                    <li><a href="#" class="subm">3depth title</a></li>
+                                                    <li><a href="#" class="subm">3depth title</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="contents">
+                            <!--
+                            <nav class="breadcrumb-wrap" aria-label="브레드크럼">
+                                <ol class="breadcrumb">
+                                    <li class="home"><a href="#" class="txt">홈</a></li>
+                                    <li><span class="txt">민원</span></li>
+                                    <li><span class="txt">통합 신청</span></li>
+                                    <li><span class="txt">통합 민원/예약 신청</span></li>
+                                </ol>
+                            </nav>
+                            <div class="page-title-wrap" data-type="responsive">
+                                <h2 class="h-tit">통합 민원/예약 신청</h2>
+                                <div class="krds-drop-wrap h-tit-drop">
+                                    <button type="button" class="h-tit drop-btn">서비스 소개</button>
+                                    <div class="drop-menu">
+                                        <div class="drop-in">
+                                            <ul class="drop-list">
+                                                <li><a href="#" class="item-link">서비스 소개</a></li>
+                                                <li><a href="#" class="item-link">국내에서 외국발간자료 신청</a></li>
+                                                <li><a href="#" class="item-link">해외에서 국내발간자료 신청</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+
+                            <div class="krds-form-wrap">
+                                <form id="submissionForm" onsubmit="handleSubmit(event)">
+
+                                    <div class="form-group">
+                                        <div class="inline-form-field">
+                                            <label for="category">신청 카테고리</label>
+                                            <select id="category" name="category" class="form-control"
+                                                onchange="showFields()">
+                                                <option value="">-- 원하는 신청 종류를 선택하세요 --</option>
+                                                <option value="민원신청">민원신청</option>
+                                                <option value="시민제안">시민제안</option>
+                                                <option value="교육">교육, 강좌, 체험</option>
+                                                <option value="시설">공공시설/체육시설 예약</option>
+                                                <option value="장비대여">장비대여</option>
+                                                <option value="사전상담">사전상담예약</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="inline-form-field">
+                                            <label for="name">이름</label>
+                                            <input type="text" id="name" name="name" class="form-control" required
+                                                placeholder="신청자 본인의 이름을 입력하세요." value="홍길동">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="inline-form-field">
+                                            <label for="phone">전화번호</label>
+                                            <input type="tel" id="phone" name="phone" class="form-control" required
+                                                placeholder="연락 가능한 휴대폰 번호를 입력하세요. (예: 010-1234-5678)" value="010-1234-5678">
+                                        </div>
+                                    </div>
+
+                                    <div id="dynamic-fields" class="dynamic-fields">
+                                        <p style="text-align: center; color: #666;">**카테고리를 선택하시면 세부 항목이 표시됩니다.**</p>
+
+                                        <div id="fields-민원신청" class="field-section">
+                                            <h3>[민원신청] 상세 내용</h3>
+                                            <div class="form-group">
+                                                <label for="complaintType">민원 종류</label>
+                                                <input type="text" id="complaintType" name="complaintType"
+                                                    class="form-control"
+                                                    placeholder="구체적인 민원 내용을 분류하세요. (예: 도로 파손, 환경 관련, 교통 관련)" value="도로 파손">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="complaintContent">민원 내용</label>
+                                                <textarea id="complaintContent" name="complaintContent"
+                                                    class="form-control" rows="5"
+                                                    placeholder="발생 장소, 시간 등 구체적인 내용을 상세히 기입하세요.">~바닥에 싱크홀이 생겼어요</textarea>
+                                            </div>
+                                        </div>
+
+                                        <div id="fields-시민제안" class="field-section">
+                                            <h3>[시민제안] 상세 내용</h3>
+                                            <div class="form-group">
+                                                <label for="proposalTitle">제안 제목</label>
+                                                <input type="text" id="proposalTitle" name="proposalTitle"
+                                                    class="form-control" placeholder="제안의 핵심 내용을 요약하여 기입하세요." value="요약 제목">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="proposalContent">제안 내용</label>
+                                                <textarea id="proposalContent" name="proposalContent"
+                                                    class="form-control" rows="5"
+                                                    placeholder="개선 방향, 기대 효과 등 상세 내용을 기입하세요.">~부분이 ~이렇게 바뀌면 ~이렇게 될 것 같아요</textarea>
+                                            </div>
+                                        </div>
+                                        <div id="fields-교육" class="field-section">
+                                            <h3>[교육, 강좌, 체험] 상세 내용</h3>
+                                            <div class="form-group">
+                                                <label for="programName">프로그램명</label>
+                                                <input type="text" id="programName" name="programName"
+                                                    class="form-control" placeholder="신청하고자 하는 강좌/체험의 정확한 이름을 기입하세요." value="ITQ(한글2022)">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="programDate">희망 일자/시간</label>
+                                                <input type="text" id="programDate" name="programDate"
+                                                    class="form-control" placeholder="프로그램에 따라 희망하는 날짜나 시간을 기입하세요." value="xx월 xx일 xx시">
+                                            </div>
+                                        </div>
+
+                                        <div id="fields-시설" class="field-section">
+                                            <h3>[공공시설/체육시설] 예약 상세</h3>
+                                            <div class="form-group">
+                                                <label for="facilityName">시설명</label>
+                                                <input type="text" id="facilityName" name="facilityName"
+                                                    class="form-control"
+                                                    placeholder="예약하고자 하는 시설의 명칭을 기입하세요. (예: 시민회관 대회의실, 풋살장)" value="대회의실">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="facilityDateTime">예약 일시/시간</label>
+                                                <input type="text" id="facilityDateTime" name="facilityDateTime"
+                                                    class="form-control" placeholder="시설 사용을 희망하는 날짜와 시간을 기입하세요." value="xx월 xx일 xx시">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="facilityPurpose">사용 목적</label>
+                                                <textarea id="facilityPurpose" name="facilityPurpose"
+                                                    class="form-control" rows="3"
+                                                    placeholder="시설 이용의 구체적인 목적을 기입하세요.">~것을 하려고 합니다</textarea>
+                                            </div>
+                                        </div>
+
+                                        <div id="fields-장비대여" class="field-section">
+                                            <h3>[장비대여] 상세 내용</h3>
+                                            <div class="form-group">
+                                                <label for="equipmentName">장비 명칭</label>
+                                                <input type="text" id="equipmentName" name="equipmentName"
+                                                    class="form-control" placeholder="대여할 장비의 정확한 이름을 기입하세요." value="XXX 망치, XXX 드릴">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="rentalPeriod">대여 기간</label>
+                                                <input type="text" id="rentalPeriod" name="rentalPeriod"
+                                                    class="form-control" placeholder="장비 대여 시작일과 반납일을 기입하세요." value="xx월 xx일 xx시 ~ xx월 xx일 xx시">
+                                            </div>
+                                        </div>
+
+                                        <div id="fields-사전상담" class="field-section">
+                                            <h3>[사전상담예약] 상세 내용</h3>
+                                            <div class="form-group">
+                                                <label for="consultationArea">상담 분야</label>
+                                                <input type="text" id="consultationArea" name="consultationArea"
+                                                    class="form-control"
+                                                    placeholder="원하는 상담 분야를 기입하세요. (예: 법률, 취업, 세무)" value="취업 상담">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="consultationContent">상담 희망 일시 및 내용</label>
+                                                <textarea id="consultationContent" name="consultationContent"
+                                                    class="form-control" rows="3"
+                                                    placeholder="상담 희망 날짜, 시간 및 상담할 내용을 간략히 기입하세요.">xx월 xx일 xx시 상담내용: 취업을 위한 꿀팁</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <script>
+                                function showFields() {
+                                    // 1. 모든 동적 필드 섹션을 숨깁니다.
+                                    const sections = document.querySelectorAll('.field-section');
+                                    sections.forEach(section => {
+                                        section.style.display = 'none';
+                                    });
+
+                                    // 2. 선택된 카테고리에 해당하는 필드를 찾아 보여줍니다.
+                                    const selectedCategory = document.getElementById('category').value;
+                                    const targetSection = document.getElementById('fields-' + selectedCategory);
+
+                                    if (targetSection) {
+                                        targetSection.style.display = 'block';
+                                    }
+                                }
+
+                                function handleSubmit(event) {
+                                    event.preventDefault(); // 기본 폼 제출 동작 방지
+
+                                    const form = document.getElementById('submissionForm');
+                                    const category = document.getElementById('category').value;
+
+                                    if (!category) {
+                                        alert("신청 카테고리를 선택해 주세요.");
+                                        return;
+                                    }
+
+                                    // 간단한 필수 필드 검사 (이름, 전화번호)
+                                    if (!form.name.value || !form.phone.value) {
+                                        alert("이름과 전화번호는 필수 입력 항목입니다.");
+                                        return;
+                                    }
+
+                                    // 폼 데이터 수집 (콘솔에서 확인용)
+                                    const data = new FormData(form);
+                                    const formData = {};
+                                    for (const [key, value] of data.entries()) {
+                                        if (value) {
+                                            formData[key] = value;
+                                        }
+                                    }
+
+                                    console.log('--- 신청 데이터 접수 완료 ---');
+                                    console.log('접수된 데이터:', formData);
+
+                                    alert('신청이 성공적으로 접수되었습니다. 감사합니다.');
+
+                                    // 성공 후 폼 초기화
+                                    form.reset();
+                                    showFields(); // 동적 필드도 초기 상태로 되돌립니다.
+                                }
+
+                                function handleCancel() {
+                                    // 사용자에게 취소 여부를 확인합니다.
+                                    if (confirm("작성 중인 내용을 모두 지우고 신청을 취소하시겠습니까?")) {
+                                        const form = document.getElementById('submissionForm');
+                                        form.reset(); // 폼 필드 초기화
+                                        showFields(); // 동적 필드 숨김 처리
+                                        alert("작성이 취소되고 내용이 초기화되었습니다.");
+                                    }
+                                }
+
+                                // 페이지 로드 시 초기 상태 설정
+                                document.addEventListener('DOMContentLoaded', showFields);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://v04.krds.go.kr/resources/js/lib/jquery-3.7.1.min.js"></script>
+                <script src="https://v04.krds.go.kr/resources/js/lib/swiper-bundle.min.js"></script>
+                <script src="https://v04.krds.go.kr/resources/js/lib/sortable.min.js"></script>
+                <script src="https://v04.krds.go.kr/resources/js/krds-common.js"></script>
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <div class="p-2 m-2">
+                            <button type="button" class="btn btn-success btn-action01">수정 하기</button>
+                            <button type="button" class="btn btn-secondary btn-action01">취소</button>
+                        </div>
+                        <div class="p-2 m-2">
+                            <button type="button" class="btn btn-primary btn-action01">수정 가능</button>
+                            <button type="button" class="btn btn-danger btn-action01">수정 불가</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 iframe -->
+        <iframe id="footer-frame" src="footer.html" onload="resizeIframe(this)" scrolling="no"></iframe>
+    </div>
+
+    <!-- 스크립트 : 라이브러리 -->
+    <script src="resources/js/pattern/jquery.min.js"></script>
+
+    <!-- 스크립트 : 패턴 페이지 -->
+
+    <script src="resources/js/pattern/ui-pattern-script.js"></script>
+
+
+    <!-- 스크립트 : 컴포넌트 -->
+    <script src="resources/js/component/ui-script.js"></script>
+</body>
+
+</html>
